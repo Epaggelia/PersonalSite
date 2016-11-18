@@ -41,23 +41,20 @@ table {
 	border-spacing: 0;
 }
 
-/*		^ CSS RESET ^		*/
+/* ^^^^^^^^^ CSS RESET ^^^^^^^^^^ */
 
 body {
 	background-color: #5c96bc;
-
 }
 
 #window {
 	background-color: #acbbc5;
-	position: absolute;
 	margin-left: 180px;	
-	padding-left: 120px;
-	padding-bottom: 40em;
+	min-height: 90vh;
+	padding: 10vh 0px 2em 120px;
 }
 
 #container {
-	/*max-width:380px;*/ 
 	width:100%;
 	height: 100%;
 	overflow: auto;
@@ -65,11 +62,17 @@ body {
 	font-family: serif;
 }
 
+/*iframe {
+	width: 100%;
+	height: 40em;
+}*/
+
 header {
 	background-color: #2189ce;
 	text-align: center;
 	padding: 1em 0em;
 	margin: 0%;
+	
 }
 
 header h1 {
@@ -122,9 +125,9 @@ nav ul li h2 a{
 	position: static;
 	background-color: #445a90;
 	width: 80%;
-	margin: 120px 0px 0px 0px;
+	min-width: 720px;
+	margin: 0px 0px 0px 0px;
 	padding: 2em 1em;
-	/*border: black solid thick;*/
 }
 
 #content a {
@@ -133,7 +136,6 @@ nav ul li h2 a{
 }
 
 #content a div {
-	display:block;
 	border: black solid thick;
 	padding: 0.5em;	
 	margin: 0.5em;
@@ -158,8 +160,6 @@ nav ul li h2 a{
 }
 
 footer{
-	display: block;
-	position: absolute;
 	float: right;
 	text-align: center;
 	background-color: #333;
@@ -167,6 +167,5 @@ footer{
 	width: 100%;
 	padding: 1.5em 0em;
 	margin: 0% ;
-	margin-top: 60em;
 	font-size: 0.8em;
 } 
