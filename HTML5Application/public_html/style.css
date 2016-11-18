@@ -1,16 +1,10 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
+section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,8 +12,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, 
+nav, section {
 	display: block;
 }
 body {
@@ -31,8 +25,7 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
@@ -43,69 +36,73 @@ table {
 
 /* ^^^^^^^^^ CSS RESET ^^^^^^^^^^ */
 
-body {
-	background-color: #5c96bc;
+* {
+	border-radius: 0px 25px 10px 25px;
+}
+
+body, #content{
+	background-color: #2e2e2e;
 }
 
 #window {
-	background-color: #acbbc5;
+	background-color: #4c7590;
 	margin-left: 180px;	
 	min-height: 90vh;
 	padding: 10vh 0px 2em 120px;
+	border-left: black solid thick;
 }
 
 #container {
 	width:100%;
-	height: 100%;
-	overflow: auto;
-	margin: 0% auto;
-	font-family: serif;
+	font-family: "palatino linotype", "Book antiqua", plantino, serif;
 }
 
-/*iframe {
-	width: 100%;
-	height: 40em;
-}*/
+.hover :hover, #content a div:hover:not(h3):not(p){
+	background-color: #2d335f;
+	-webkit-box-shadow: 6px 6px 2px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 6px 6px 2px 1px rgba(0,0,0,0.75);
+	box-shadow: 6px 6px 2px 1px rgba(0,0,0,0.75);
+}
 
 header {
-	background-color: #2189ce;
+	background-color: #1b1b1b;
 	text-align: center;
 	padding: 1em 0em;
 	margin: 0%;
-	
+	-webkit-box-shadow: inset -7px -14px 9px -5px rgba(218,228,250,1);
+	-moz-box-shadow: inset -7px -14px 9px -5px rgba(218,228,250,1);
+	box-shadow: inset -7px -14px 9px -5px rgba(218,228,250,1);
+	border-radius: 0px 0px 10px 20px;
+	color:whitesmoke;
 }
 
 header h1 {
 	font-size: 2em;
 }
 
+a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
 nav {
 	width: 180px;
 	height: 100%;
 	float: left;
-	margin: 0%;	
 }
 
 nav ul {
 	padding: 0.4em 0em;
-	margin: 0%;
 }
 
 nav ul li{
 	display: table;
-	background-color: #4e92bf;
+	background-color: #4c7590;
 	border: black solid 2px;
 	width:160px;
 	height: 2em;
-	padding: auto;
-	margin: 0.3em 0.2em;
+	margin: 0.5em 0.2em;
 	text-align: center;
-}
-
-nav ul li:hover{
-	background-color: #2d335f;
-	border: black solid 4px;
-	width:156px;
 }
 
 nav ul li h2{
@@ -116,56 +113,50 @@ nav ul li h2{
 nav ul li h2 a{
 	display:block;
 	padding: 0.5em 0em;
-	text-decoration: none;
 	font-size: 1.2em;
-	color: black;
 }
 
 #content {
 	position: static;
-	background-color: #445a90;
 	width: 80%;
-	min-width: 720px;
-	margin: 0px 0px 0px 0px;
+	min-width: 720px;	
+	min-height: 60vh;
+	margin-bottom: 8em;
 	padding: 2em 1em;
+	-webkit-box-shadow: 9px 9px 8px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 9px 8px 0px rgba(0,0,0,0.75);
+	box-shadow: 9px 9px 8px 0px rgba(0,0,0,0.75);
 }
 
-#content a {
-	text-decoration: none;
-	color: black;
-}
-
-#content a div {
+#content div {
 	border: black solid thick;
 	padding: 0.5em;	
 	margin: 0.5em;
 	margin-bottom: 3em;
-	background-color:#314881;
+	background-color:#4c7590;
+	color: whitesmoke;
 }
 
-#content a div:hover {
-	border-radius: 15px;
-	padding: 0.6em;	
-	margin: 0.4em;
-	margin-bottom: 3em;
-	background-color:#36508e;
-}
-
-#content a div h3 {
+#content div h3 {
 	font-size: 1.2em;
 }
 
-#content a div p {
+#content div p {
 	padding: 1em 0em;
 }
 
 footer{
 	float: right;
 	text-align: center;
-	background-color: #333;
+	background-color: #1b1b1b;
 	color: #fff;
 	width: 100%;
 	padding: 1.5em 0em;
-	margin: 0% ;
 	font-size: 0.8em;
+	border-radius: 5px 15px 0px 0px;
 } 
+
+#contact {
+	color: lightcyan;
+}
+
